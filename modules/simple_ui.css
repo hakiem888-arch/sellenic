@@ -1,0 +1,26 @@
+/* Restrained styling, without targeting every nested Streamlit container. */
+.stApp { background: var(--background-color); }
+.block-container { max-width: 1160px; padding-top: 2.2rem; padding-bottom: 4rem; }
+h1 { font-size: 2rem !important; letter-spacing: -.035em; font-weight: 700 !important; }
+h2 { font-size: 1.35rem !important; letter-spacing: -.02em; }
+h3 { font-size: 1.1rem !important; }
+[data-testid="stSidebar"] { border-right: 1px solid rgba(128, 128, 128, .14); }
+[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; }
+.brand { display: flex; align-items: center; gap: 12px; margin: 0 0 2rem; }
+.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; background: #245a4a; color: #fff; border-radius: 11px; font-size: 21px; font-weight: 700; }
+.brand strong { display: block; font-size: 18px; letter-spacing: -.02em; }
+.brand small { display: block; margin-top: 4px; font-size: 12px; opacity: .65; }
+.empty-state { border: 1px dashed rgba(128,128,128,.28); border-radius: 12px; padding: 2.3rem 1.8rem; margin-top: 1.8rem; background: var(--secondary-background-color); }
+.empty-state h3 { margin: 0 0 .45rem; }
+.empty-state p { margin: 0; opacity: .72; max-width: 620px; font-size: .95rem; line-height: 1.7; }
+.stButton button, .stDownloadButton button, .stLinkButton a { border-radius: 8px !important; }
+[data-testid="stImage"] img { border-radius: 9px; }
+[data-testid="stMetricValue"] { font-size: 1.8rem; }
+button:focus-visible, a:focus-visible { outline: 3px solid #468472 !important; outline-offset: 3px; }
+@media (max-width: 740px) {
+    .block-container { padding: 1.5rem 1rem 3rem; }
+    h1 { font-size: 1.7rem !important; }
+    [data-testid="stHorizontalBlock"] { flex-wrap: wrap; }
+    [data-testid="stColumn"] { min-width: 100% !important; flex-basis: 100% !important; }
+    .empty-state { padding: 1.5rem 1rem; }
+}

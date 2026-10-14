@@ -1,0 +1,7 @@
+# Tested top-level dependency versions; not a complete transitive lock.
+streamlit==1.65.0
+pandas==2.2.3
+requests==2.34.2
+matplotlib==3.10.8
+pytrends==4.9.2
+python-dateutil==2.9.0.post0
